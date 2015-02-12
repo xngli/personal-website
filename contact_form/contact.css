@@ -1,0 +1,152 @@
+/*
+Contact Form by html-form-guide.com
+You can customize all the aspects of the form in this style sheet
+All the style elements use form id selector(notice the #contactus). So, including this
+stylesheet does not affect the other elements at all!
+*/
+
+*{
+	border:0;
+/*	font:inherit;*/
+	vertical-align:baseline;
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    color: #222222;
+    font-family: 'Droid Sans', 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+#contactus fieldset
+{
+    font-family: 'Droid Sans', 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border: none;
+	text-align: left;
+}
+
+#contactus label
+{
+    display: inline-block;
+    margin-top: 12px;
+/*    color:#ffffff;*/
+    background-color: transparent;
+}
+
+#contactus label:first-of-type
+{
+    margin-top: 0px;
+}
+
+#contactus input[type="text"],textarea
+{
+    font-size: 15px;
+    color : #222222; 
+    background-color: #A7A8A8;
+    padding : 6px;    
+    border : none;
+    width:90%;
+}
+
+#contactus input[type="text"]
+{
+  height:30px;
+}
+
+#contactus #scaptcha
+{
+  width:60px;
+  height:18px;
+}
+
+#contactus input[type="submit"]
+{
+/*    -webkit-appearance: none; */
+    font-family:'Droid Sans', 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 12px;
+    width: 80px;  
+    height: 30px;
+    padding: 6px; 
+    background-color:#A7A8A8;
+    color:#222222;
+    border: none;
+    float: right;
+    position: relative;
+    right: 10%;
+}
+
+#contactus textarea
+{
+	height: 120px; 
+}
+
+#contactus input[type="text"]:focus,textarea:focus
+{
+	border : 1px solid;
+}
+
+/*
+#contactus .container
+{
+   margin-top:8px;
+   margin-bottom: 10px;
+}
+*/
+
+#contactus .error
+{
+   color: #222222;
+}
+
+#contactus fieldset#antispam
+{
+   padding:2px;
+   border-top:1px solid #EEE;
+   border-left:0;
+   border-right:0;
+   border-bottom:0;
+   width:300px;
+}
+
+#contactus fieldset#antispam legend
+{
+   font-size: 0.8em;
+   font-weight:bold;
+   color:#222222;   
+}
+
+/* spam_trap: This input is hidden. This is here to trick the spam bots*/
+#contactus .spmhidip
+{
+   display:none;
+   width:10px;
+   height:3px;
+}
+
+#contactus table td { 
+  display: table-cell;
+  vertical-align: top; 
+}
+
+#fg_crdiv
+{
+   font-size: 0.3em;
+   opacity: .2;
+   -moz-opacity: .2;
+   filter: alpha(opacity=20);   
+}
+
+#fg_crdiv p
+{
+    display:none;
+}
+
+

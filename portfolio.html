@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Aaviya" />
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="style.css" media="screen" />
+	 <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+	<title>Xiang Li's Homepage</title>
+</head>
+
+<body>
+	<div id="mainwrap">
+
+		<header>
+			<h1><a href="/">Xiang (Sean) Li</a></h1>
+			<h2>PhD Student at University of Michigan</h2>
+			<ul id="menu">
+				<li><a class="profile" href="index.html" title="Profile">Profile</a></li>
+				<li><a class="resume" href="resume.html" title="Resume">Resume</a></li>
+				<li><a class="portfolio current" href="portfolio.html" title="Portfolio">Portfolio</a></li>
+				<li><a class="contact" href="contact.html" title="Contact">Contact</a></li>
+			</ul>
+		</header>
+		<div style="clear:both"></div>
+		<div id="content">
+
+			<div id="portfolio" class="section">
+                <div class="col2 inlineblock">
+                    <div class="verticaltop"></div>
+                </div>
+                <div class="col6 inlineblock">
+                        <div class="project">
+                                <img src="img/portofolio/microtissue_thumb.jpg" alt="sample image" width="100%" heigh="100%">
+                                <div class="project_name" onclick="window.location='p_microtissue.html;">
+                                      <p>3D cell culture platform</p>
+                                </div>
+                                <div class="project_des" onclick="window.location='p_microtissue.html';">
+                                      <p>A next-generation tissue culture platform that enables the spontaneous formation and growth of millimeter-scale 3D tissues outside the body</p>
+                                </div>
+
+                        </div>
+                        <div class="project">
+                                <a src="contact.html"><img src="img/portofolio/separation_thumb.jpg" alt="sample image" width="100%" heigh="100%"></a>
+                                <div class="project_name" onclick="window.location='p_separation.html';">
+                                      <p>Microfluidic Cell Sorting</p>
+                                </div>
+                                <div class="project_des" onclick="window.location='p_separation.html';">
+                                      <p>A microfluidic chip for continuous-flow isolation of WBCs from whole blood with high throughput and separation efficiency</p>
+                                </div>
+
+                        </div>
+                        <div class="project">
+                                <a src="contact.html"><img src="img/portofolio/aligner_design_thumb.jpg" alt="sample image" width="100%" heigh="100%"></a>
+                                <div class="project_name" onclick="window.location='p_aligner.html';">
+                                      <p>Desktop Aligner</p>
+                                </div>
+                                <div class="project_des" onclick="window.location='p_aligner.html';">
+                                      <p>A high-resolution desktop aligner for multilayer soft lithography</p>
+                                </div>
+
+                        </div>
+                        <div class="project">
+                                <a src="contact.html"><img src="img/portofolio/nanofluid_thumb.jpg" alt="sample image" width="100%" heigh="100%"></a>
+                                <div class="project_name" onclick="window.location='p_nanofluid.html';">
+                                      <p>Simulation of nanofluid</p>
+                                </div>
+                                <div class="project_des" onclick="window.location='p_nanofluid.html';">
+                                      <p>Molecular dynamics simulation of the contact angle, bubble formation, and boundary slip of nanofluid</p>
+                                </div>
+
+                        </div>
+                </div>
+			</div>
+
+		</div>
+
+		<div id="footer">
+			&copy; 2015 Xiang Li
+		</div>
+        
+        <script type="text/javascript">
+ 
+            $( document ).ready(function() {
+                $( ".project" ).hover(function() {
+//                    $( this ).find( ".project_des" ).css("display", "block");
+                    $( this ).find( ".project_des" ).fadeIn(400);
+                  }, function() {
+                    $( this ).find( ".project_des" ).fadeOut(100);
+                });
+            });
+ 
+        </script>
+	</div>
+</body>
+</html>

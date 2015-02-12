@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Aaviya" />
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="style.css" media="screen" />
+    <script src="jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" />
+    <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	<title>Xiang Li's Homepage</title>
+</head>
+
+<body>
+	<div id="mainwrap">
+
+		<header>
+			<h1><a href="/">Xiang (Sean) Li</a></h1>
+			<h2>PhD Student at University of Michigan</h2>
+			<ul id="menu">
+				<li><a class="profile" href="index.html" title="Profile">Profile</a></li>
+				<li><a class="resume" href="resume.html" title="Resume">Resume</a></li>
+				<li><a class="portfolio current" href="portfolio.html" title="Portfolio">Portfolio</a></li>
+				<li><a class="contact" href="contact.html" title="Contact">Contact</a></li>
+			</ul>
+		</header>
+		<div style="clear:both"></div>
+		<div id="content">
+
+			<div id="portfolio" class="section">
+                <div class="col2 inlineblock">
+                    <p>some text</p>
+                </div>
+                <div class="col6 inlineblock">
+                    <div class="slider-wrapper theme-default">
+                        <div class="ribbon"></div>
+                        <div id="slider" class="nivoSlider">
+                            <img src="img/portofolio/sorting.jpg" alt="" title="#sorting"/>
+                            <img src="img/portofolio/separation_thumb_500_300.jpg" alt="" title="#separation_thumb"/>
+                        </div>
+                        <div id="sorting" class="nivo-html-caption" style="display:none">
+                             Sorting
+                        </div>
+                        <div id="separation_thumb" class="nivo-html-caption" style="display:none">
+                             Separation thumb
+                        </div>
+                    </div>
+                    
+                    <h3>Microfluidic Blood Cell Sorting</h3>
+                    <h4>Description</h4>
+                    <p>White blood cells (WBCs) constitute about 0.1% of the blood cells, yet they play a critical role in innate and adaptive immune responses. A microfluidic chip was developed for continuous-flow isolation and sorting of WBCs from whole blood with high throughput and separation efficiency. The microfluidic cell sorting chip leveraged the crossflow filtration scheme in conjunction with a surface-micromachined poly(dimethylsiloxane) (PDMS) microfiltration membrane (PMM) with high porosity. The microfluidic cell sorting chip holds promise as an upstream component for blood sample preparation and analysis in integrated blood-on-a-chip systems.</p>
+                    <h4>Skills</h4>
+                    <p>Microfluidics, L-edit, Lithography, RIE, SEM, COMSOL</p>
+                    <h4>References</h4>
+                    <p>Xiang Li, Weiqiang Chen, Guangyu Liu, Wei Lu, and Jianping Fu. Continuous-flow microfluidic blood cell sorting for unprocessed whole blood using surface-micromachined microfiltration membranes. Lab on a Chip, vol. 14, pp. 2565-2575, 2014.</p>
+                
+                </div>
+			</div>
+
+		</div>
+
+		<div id="footer">
+			&copy; 2015 Xiang Li
+		</div>
+        
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider({
+                effect: 'fade',
+                manualAdvance:true
+            });
+        });
+    </script>
+        
+	</div>
+</body>
+</html>
